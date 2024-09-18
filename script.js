@@ -53,10 +53,10 @@ class Player {
         this.img1 = new Image();
         this.img2 = new Image();
         this.imgBoost = new Image();
-        this.img0.src = 'ufo_0.png';
-        this.img1.src = 'ufo_1.png';
-        this.img2.src = 'ufo_2.png';
-        this.imgBoost.src = 'ufo_boost.png';
+        this.img0.src = 'Images/ufo_0.png';
+        this.img1.src = 'Images/ufo_1.png';
+        this.img2.src = 'Images/ufo_2.png';
+        this.imgBoost.src = 'Images/ufo_boost.png';
         this.num = num;
         this.ogRadius = 30;
         this.radius = this.ogRadius;
@@ -324,7 +324,7 @@ class Human {
         this.x = Math.random() * (window.innerWidth/2-this.radius*2) + window.innerWidth/2+this.radius;
         this.y = Math.random() * (window.innerHeight-this.radius*2) + this.radius;
         this.img = new Image();
-        this.img.src = `Humans/${Human.sources[Math.floor(Math.random() * Human.sources.length)]}.png`;
+        this.img.src = `Images/Humans/${Human.sources[Math.floor(Math.random() * Human.sources.length)]}.png`;
         this.player = null;
         this.timeSinceLastTransfer = 1;
         Human.human = this;
@@ -368,7 +368,7 @@ class Asteroid {
         this.y = Math.random() * window.innerHeight;
         this.angle = Math.random() * 2 * Math.PI;
         this.img = new Image();
-        this.img.src = 'asteroid.png';
+        this.img.src = 'Images/asteroid.png';
         this.radius = Math.random()**2 * 40 + 20;
         this.x = window.innerWidth + this.radius;
         this.speed = Math.random() * 1.5 + 0.5;
