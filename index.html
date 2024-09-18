@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id = 'p1Holder' class = 'playerHolder'>
+        <div id = 'p1Score' class = 'playerScore'>0</div>
+        <div id = 'p1' class = 'boostMeter'>
+            <div></div>
+        </div>
+    </div>
+    <div id = 'p2Holder' class = 'playerHolder'>
+        <div id = 'p2Score' class = 'playerScore'>0</div>
+        <div id = 'p2' class = 'boostMeter'>
+            <div></div>
+        </div>
+    </div>
+
+    <img class = 'planet' id = 'planet1' src="Planet_1.png">
+    <img class = 'planet' id = 'planet2' src="Planet_2.png">
+
+    <canvas></canvas>
+    <canvas id = 'stars'></canvas>
+    
+    <script src="Canvas.js"></script>
+    <script src="Classes/Background.js"></script>
+    <script src="Classes/Powerup.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

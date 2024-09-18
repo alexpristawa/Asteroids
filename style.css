@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.playerHolder {
+    position: absolute;
+    left: 12vw;
+    width: 12vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#p1Holder {
+    top: 2vh;
+}
+
+#p2Holder {
+    top: 93vh;
+}
+
+.playerScore {
+    font-size: 1.5rem;
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.boostMeter {
+    display: flex;
+    border: 2px solid rgb(200, 200, 200);
+    height: 2vh;
+    width: 10vw;
+}
+
+.boostMeter > div {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+img.planet {
+    height: 40vh;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: -20vh;
+    z-index: -1;
+}
+
+img#planet1 {
+    top: -20vh;
+    transform: rotate(180deg);
+}
+
+img#planet2 {
+    top: 80vh;
+}
+
+#stars {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
